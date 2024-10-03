@@ -1,12 +1,14 @@
 # main.tf
+
+
 terraform {
-  backend "local" {
-    path = "./terraform.tfstate"
+  required_providers {
+    keycloak = {
+      source  = "mrparkers/keycloak"
+      version = ">= 4.0.0"
+    }
   }
 }
-
-
-
 
 # Define a local variable
 locals {
