@@ -1,6 +1,3 @@
-# main.tf
-
-
 terraform {
   required_providers {
     keycloak = {
@@ -8,6 +5,9 @@ terraform {
       version = ">= 4.0.0"
     }
   }
+}
+
+provider "keycloak" {
 }
 
 # Define a local variable
@@ -25,10 +25,6 @@ output "environment" {
 output "owner" {
   description = "The owner of the infrastructure"
   value       = local.owner
-}
-
-
-provider "keycloak" {
 }
 
 resource "keycloak_realm" "realm" {
