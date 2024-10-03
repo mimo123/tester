@@ -8,6 +8,7 @@ terraform {
 }
 
 provider "keycloak" {
+url           = "http://localhost:8080"
 }
 
 # Define a local variable
