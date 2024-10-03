@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "keycloak" {
-url           = "http://172.17.0.2:8080"
+url           = "http://127.0.0.1:8080"
 }
 
 # Define a local variable
