@@ -9,6 +9,7 @@ terraform {
 
 provider "keycloak" {
 url           = "http://keycloak:8080"
+realm         = "master"
 }
 
 # Define a local variable
