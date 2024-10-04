@@ -45,3 +45,18 @@ resource "keycloak_openid_client" "openid_client" {
   ]
 
 }
+
+
+resource "keycloak_openid_user_client_role_protocol_mapper" "user_client_role_mapperA" {
+  realm_id   = keycloak_realm.realm.id
+  client_id  = keycloak_openid_client.openid_client.id
+  name       = "user-client-role-mapperA"
+}
+
+
+resource "keycloak_openid_user_client_role_protocol_mapper" "user_client_role_mapperB" {
+  realm_id   = keycloak_realm.realm.id
+  client_id  = keycloak_openid_client.openid_client.id
+  name       = "user-client-role-mapperB"
+}
+
