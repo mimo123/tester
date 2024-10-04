@@ -38,7 +38,6 @@ resource "keycloak_openid_client" "openid_client" {
   client_id           = "test-client"
 
   name                = "test client"
-  enabled             = true
 
   access_type         = "CONFIDENTIAL"
   valid_redirect_uris = [
