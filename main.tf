@@ -5,7 +5,16 @@ terraform {
       version = ">= 4.0.0"
     }
   }
+
+  backend "remote" {
+    hostname = "testjfrogma.jfrog.io"
+    organization = "test"
+    workspaces {
+      prefix = "my-prefix-"
+    }
+  }
 }
+
 
 provider "keycloak" {
 }
