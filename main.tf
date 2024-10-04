@@ -37,6 +37,7 @@ resource "keycloak_openid_client" "openid_client" {
   client_id           = "test-client"
 
   name                = "test client"
+  standard_flow_enabled = true  # Enables Authorization Code Flow
 
   access_type         = "CONFIDENTIAL"
   valid_redirect_uris = [
