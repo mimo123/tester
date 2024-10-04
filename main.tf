@@ -10,7 +10,7 @@ terraform {
     hostname = "testjfrogma.jfrog.io"
     organization = "test"
     workspaces {
-      prefix = "tester-"
+      prefix = "my-prefix-"
     }
   }
 }
