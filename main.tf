@@ -8,7 +8,6 @@ terraform {
 }
 
 provider "keycloak" {
-
 }
 
 # Define a local variable
@@ -44,10 +43,4 @@ resource "keycloak_openid_client" "openid_client" {
     "http://localhost:8080/openid-callback"
   ]
 
-  login_theme = "keycloak"
-
-  extra_config = {
-    "key1" = "value1"
-    "key2" = "value2"
-  }
 }
