@@ -10,6 +10,9 @@ terraform {
 provider "keycloak" {
 url           = "http://keycloak:8080"
 realm         = "master"
+client_id     = "admin-cli"
+username      = "admin"
+password      = "admin"
 }
 
 # Define a local variable
